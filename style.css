@@ -1,0 +1,2006 @@
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-size: 1.2rem;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.homeimage
+{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/one.png");
+    background-size: cover;
+    margin: -10px -10px -10px -10px;
+}
+
+/*Main page enter button*/
+.enter {
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  font-size: 1rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.enter:hover{
+  background-color: #9900FF;
+}
+
+.enterClicked{
+  align-self: flex-end;
+  padding-bottom: 1em;
+}
+
+/*End of page enter button*/
+
+.menuimage
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/halls/middle.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.logo{
+  display: block;
+  padding: 5px;
+  margin: auto;
+  width: 5%;
+  height: auto;
+}
+
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-top: 1em; */
+  height: 100%;
+  width: 100%;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+nav li{
+  /* border: 1px solid black; */
+  height: 80px;
+  width: 100%;
+}
+
+li:nth-child(1){
+  background-color: rgb(170,170,170,0.7);
+}
+
+li:nth-child(2){
+  background-color: rgba(146,133,171, 0.7);
+}
+
+li:nth-child(2):hover{
+  background-color: rgba(170, 0, 255, 1);
+}
+
+li:nth-child(3){
+  background-color: rgba(159,179,150,0.7);
+}
+
+li:nth-child(3):hover{
+  background-color: rgba(2, 89, 15, 1);
+}
+
+li:nth-child(4){
+  background-color: rgba(222,196,181,0.7);
+}
+
+li:nth-child(4):hover{
+  background-color: rgba(155,101,70,1);
+}
+
+li:nth-child(5){
+  background-color: rgba(156,198,200,0.7);
+}
+
+li:nth-child(5):hover{
+  background-color: rgba(80,141,145,1);
+}
+
+li:nth-child(6){
+  background-color: rgba(179,129,127,0.7);
+}
+
+li:nth-child(6):hover{
+  background-color: rgba(140,86,84,1);
+}
+
+li:nth-child(7){
+  background-color: rgba(143,135,106,0.7);
+}
+
+li:nth-child(7):hover{
+  background-color: rgba(106,100,78,1);
+}
+
+li:nth-child(8){
+  background-color: rgba(113,113,113,0.7);
+}
+
+li:nth-child(8):hover{
+  background-color: rgba(82,82,82,1);
+}
+
+.hamburger{
+  width: 20%;
+  height: auto;
+  position: absolute;
+  margin: 30px;
+  z-index: 10;
+}
+
+.hamburgerBars{
+  border: 3.5px solid black;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px #8859A9;
+  width: 18%;
+  margin-bottom: 5px;
+}
+
+.aboutimage, .northAmericanMuseums, .museumImage
+{
+    background: rgb(149,149,149);
+    background: linear-gradient(180deg, rgba(149,149,149,1) 0%, rgba(209,209,209,1) 50%, rgba(219,219,219,1) 100%);
+    height: 100vh;
+    width: 100%;
+}
+
+.museumImage{
+  height: 100%;
+}
+
+
+.aboutimage h2, .museumImage h2{
+  color: #FFF;
+  display: block;
+  font-size: 2em;
+  margin: auto;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.museumImage h2{
+  margin-bottom: 1em;
+}
+
+/*This is for the list of Museums*/
+.aboutimage button, .museumImage button{
+  background-color: #9900FF;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1.1em;
+  font-weight: 600;
+  height: 50px;
+  margin: auto;
+  margin-top: 10em;
+  padding: 0.375rem 0.75rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 250px;
+}
+
+
+
+/*This is for the list of Museums*/
+.aboutBorder{
+  background-color: #EEE;
+  height: auto;
+  margin: auto;
+  margin-top: 10px;
+  width: 75%;
+}
+
+.aboutBorder p{
+  font-size: 1.2em;
+  padding-left: 10px;
+}
+
+/*northAmericanMuseums*/
+ .northAmericanMuseums h2, .northAmericanMuseums h4{
+   color: white;
+   text-align: center;
+ }
+
+ .northAmericanMuseums h2{
+   font-size: 2em;
+   margin: 0;
+   padding-top: 25px;
+ }
+
+ .northAmericanMuseums h4{
+   margin-top: 0.5em;
+ }
+
+ .northAmericanMuseums ul{
+   list-style-type: none;
+ }
+
+.northAmericanMuseums li{
+  background-color: transparent;
+  margin-top: 1.2em;
+}
+
+.northAmericanMuseums li:hover{
+  background-color: gray;
+  color: white;
+}
+
+ .northAmericanMuseums a{
+  color: black;
+ }
+
+.northAmericanMuseums button{
+  display: inline-block;
+  margin: auto;
+}
+
+.museumButton{
+  margin-left: 50%;
+}
+
+/*end of northAmericanMuseums*/
+
+.playlistimage
+{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/5.png");
+    background-size: cover;
+    margin: -10px -10px -10px -10px;
+}
+
+
+svg path{
+  fill: #363636;
+}
+
+
+svg path:hover{
+  fill: #AA00FF;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+
+.fullListLink{
+  color: black;
+  margin-top: 10px;
+}
+
+.fullListLink:hover{
+  color:red;
+}
+
+
+.fullListLink p{
+  margin: 0;
+  text-align: center;
+}
+
+
+.museumsoneimage{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/museumsone.png");
+    background-size: cover;
+    margin: -10px -10px -10px -10px;
+}
+
+.museumstwoimage{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/museumstwo.png");
+    background-size: cover;
+    margin: -10px -10px -10px -10px;
+}
+
+.museumsthreeimage{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/museumsthree.png");
+    background-size: cover;
+    margin: -10px -10px -10px -10px;
+}
+
+.museumsfourimage{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/museumsfour.png");
+    background-size: cover;
+    margin: -10px -10px -10px -10px;
+}
+
+.museumsfiveimage{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/museumsfive.png");
+    background-size: cover;
+    margin: -10px -10px -10px -10px;
+}
+
+.museumssiximage{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/museumssix.png");
+    background-size: cover;
+    margin: -10px -10px -10px -10px;
+}
+
+.exhibitionsimage, .specialExhibitionsImage, .learnhistoryimage, .fashion, .learnhistoryInfoPage {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+/*These three cover the exhibitions background images
+for all 3 major nav pages*/
+.exhibitionsimage{
+  background-image: url("./images/halls/left.png");
+}
+
+.specialExhibitionsImage{
+  background-image: url("./images/halls/middle.png");
+}
+
+.learnhistoryimage
+{
+    background-image: url("./images/halls/right.png");
+}
+
+.fashion{
+  background: url("./images/fashion.jpg") rgba(0, 0, 0, 0.7);
+  background-size:cover;
+  background-blend-mode: multiply;
+  position: absolute;
+}
+
+.learnhistoryInfoPage{
+  background: url("./images/lyh.jpg") rgba(0, 0, 0, 0.7);
+  background-size:cover;
+  background-blend-mode: multiply;
+  position: absolute;
+}
+
+.learnhistoryInfoPage h4, .learnhistoryInfoPage h1, .learnhistoryInfoPage p{
+  color: white;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.learnhistoryInfoPage h4{
+  font-size: 1.5em;
+  padding-top: 2em;
+}
+
+.learnhistoryInfoPage h2{
+  font-size: 2em;
+}
+
+.learnhistoryInfoPage p{
+  font-size: 1.3em;
+  padding: 0 2em 0 2em;
+}
+
+.learnhistoryInfoPage button{
+  background-color: #9900FF;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1.1em;
+  font-weight: 600;
+  height: 50px;
+  margin: auto;
+  padding: 0.375rem 0.75rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 150px;
+}
+
+.learnhistoryInfoPage button:hover{
+  color: #fff;
+  background-color: #6E00B8;
+  text-decoration: none;
+}
+
+.learnhistoryInfoPage button:focus, .learnhistoryInfoPage button.focus{
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(147, 0, 255, 0.25);
+}
+
+.exhibitionssection, .exhibitionsonesection, .exhibitionstwosection,
+ .exhibitionsthreesection, .specialExhibitionsSection, .firstGalleryRoom, .secondGalleryRoom, .sixthGalleryRoom, .camcapGalleryRoom1, .camcapGalleryRoom4, .camcapGalleryRoom6, .btafGalleryRoom1, .btafGalleryRoom2, .btafGalleryRoom6, .rbhGalleryRoom2{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 45%;
+}
+
+.specialExhibitionsSection{
+  width: 25%;
+}
+
+/*All styling for exhibitionsonesection*/
+.exhibitionsonesection{
+
+}
+/*May need to delete this ^^ i think it controls exhibitionspageone*/
+
+/*vvv created for exhibitionspageone**/
+.firstGalleryRoom{
+  width: 40%;
+}
+/*^^^ created for exhibitionspageone*/
+
+.secondGalleryRoom{
+  width: 40%;
+}
+
+.sixthGalleryRoom{
+  justify-content: space-around;
+}
+
+.camcapGalleryRoom1{
+  justify-content: space-around;
+}
+
+.camcapGalleryRoom4{
+  width: 42.5%;
+}
+
+.camcapGalleryRoom6{
+  justify-content: space-around;
+}
+
+.btafGalleryRoom1{
+  justify-content: space-around;
+  width: 100%;
+}
+
+  .btafGalleryRoom2{
+    width: 40%;
+    justify-content: space-around;
+  }
+
+  .btafGalleryRoom6{
+    margin-left: 2em;
+    width: 44%;
+  }
+
+
+/*This will be added to all pages, just a test*/
+.card, .cardPageTwo, .cardRbh, .cardRbhAncestors{
+  background-color: #fff;
+  width: 50px;
+  height: auto;
+  margin: auto;
+}
+
+.card h2{
+  color: black;
+  font-size: .2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card p{
+  color: black;
+  font-size: .15em;
+  margin: 0;
+}
+
+
+.cardPageTwo{
+  width: 175px;
+  height: 75px;
+  margin-top: 3em;
+}
+
+
+
+.cardPageTwo p{
+  color: black;
+  font-size: .5em;
+  padding: 2px;
+  margin: 0;
+}
+
+.cardPageThree{
+  color: transparent;
+  height: 150px;
+  width: 175px;
+  margin-left: -0.5em;
+}
+
+.cardPageThree p{
+  color: black;
+  font-size: .7em;
+}
+
+
+.cardRbhAncestors{
+  width: 225px;
+  height: 80px;
+  margin-top: 2.4em;
+}
+
+.cardRbh{
+  width: 225px;
+  height: 120px;
+  margin-top: 1.8em;
+}
+
+.cardRbh h2, .cardRbhAncestors h2{
+  color: black;
+  font-size: .8em;
+  margin: 0;
+  padding: 0 0.5em 0 0.5em;
+  text-align: left;
+}
+
+.cardRbh h4, .cardRbhAncestors h4{
+  color: black;
+  font-size: .7em;
+  font-weight: lighter;
+  margin-top: .25em;
+  margin-bottom: .02em;
+  padding: 0 0.7em 0 0.7em;
+  text-align: left;
+}
+
+.cardRbh p, .cardRbhAncestors p{
+  color: black;
+  font-size: .6em;
+  margin-top: 0.2em;
+  padding: 0 1em 0 1em;
+  text-align: left;
+}
+
+
+/*End of styling for exhibitionsonesection*/
+.exhibitionstwosection{
+  width: 100%;
+  justify-content: center;
+}
+
+/*THIS WILL BE REMOVED ONCE I ADD IMAGE*/
+.placeHolderImage{
+  margin-left: 8.5em;
+  margin-top: 14em;
+  height: 160px;
+  width: 500px;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.placeHolderText{
+  color: white;
+  text-align: center;
+}
+/*THIS WILL BE REMOVED ONCE I ADD IMAGE*/
+
+
+.images, .imagesSpecialEx, .imagesLearnHistory, .imagesFirstGallery, .imagesSecondGallery, .imagesThirdGallery, .imagesFourthGallery,
+.imagesFifthGallery, .imagesSixthGallery, .camcapImagesRoom4, .camcapImagesRoom6, .camcapImagesRoom7, .rbhImagesRoom2 {
+  height: 150px;
+  width: auto;
+  position: relative;
+  top: 14.5em;
+  left: 14.2em;
+  text-align: center;
+}
+
+.imagesSpecialEx{
+  left: 25em;
+}
+
+.imagesLearnHistory{
+  width: 100%;
+  left: 22.5em;
+}
+
+.imagesFirstGallery{
+  top: 13.5em;
+  left: 15.8em;
+}
+
+
+.imagesSecondGallery{
+  height: 175px;
+  top: 13.5em;
+  left: 21em;
+}
+
+.imagesSecondGallery h2{
+  color: #8E7CC3;
+  font-size: 2.4em;
+  margin-top: 1.5em;
+}
+
+.imagesThirdGallery, .imagesFourthGallery{
+  left: 21em;
+  top: 13.5em;
+}
+
+.imagesFifthGallery{
+  height: auto;
+  width: 150px;
+  left: 20.5em;
+  top: 13.5em;
+}
+
+.imagesFifthGallery h2{
+  font-size: 1.5em;
+}
+
+.imagesSixthGallery{
+ top: 13.5em;
+ left: 23em;
+}
+
+.camcapImagesRoom4{
+  left: 20.2em;
+  top: 13.5em;
+}
+
+.camcapImagesRoom6{
+  left:20em;
+  top: 13.5em;
+}
+
+.camcapImagesRoom7{
+  height: 160px;
+  left: 33em;
+  top: 13.3em;
+}
+
+.rbhImagesRoom2{
+  height: 180px;
+  top: 13.5em;
+  left: 23em;
+}
+
+
+
+/*right GALLERY PREVIEW*/
+.rightGalleryPreview, .rightGalleryPreviewTwo, .rightGalleryCard{
+display: inline-block;
+float: right;
+height: 150px;
+margin-top: 7em;
+overflow: hidden;
+}
+
+.rightGalleryPreviewTwo{
+  margin-top: 5em;
+}
+
+.rightGalleryCard{
+  margin-top: -8.5em;
+}
+
+.rightGalleryContainer{
+  overflow: hidden;
+  width:75px;
+}
+
+.exhibitionsRightGallery{
+  width: auto;
+  height: 200px;
+}
+/*End of Right Gallery*/
+
+
+/*Left Gallery Preview*/
+.leftGalleryPreview, .leftGalleryPreviewTwo{
+display: inline-block;
+height: 150px;
+margin-top: 6.5em;
+overflow: hidden;
+}
+
+.leftGalleryPreviewTwo{
+  margin-top: 5em;
+}
+
+.leftGalleryContainer{
+  overflow: hidden;
+  width:75px;
+}
+
+.exhibitionsLeftGallery{
+  width: auto;
+  height: 200px;
+}
+/*End of Left Gallery*/
+
+
+
+
+.exhibitions, .exhibitionsone, .exhibitionstwo, .exhibitionsGalleryOne {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.exhibitionsGalleryOne{
+  margin-bottom: .2em;
+}
+.overlay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+
+.overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.overlay:hover{
+  opacity: 1;
+}
+
+.overlay:hover > * {
+  transform: translateY(0);
+}
+
+
+.fashion h4, .fashion h1, .fashion p{
+  color: white;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.fashion h4{
+  font-size: 1.5em;
+  padding-top: 2.5em;
+  margin-bottom: -1em;
+  text-align: center;
+}
+
+.fashion h1{
+  font-size: 2em;
+  text-align: center;
+}
+
+.fashion p{
+  font-size: 1.3em;
+  padding-left: 1em;
+}
+
+.fashion button{
+  background-color: #9900FF;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1.1em;
+  font-weight: 600;
+  height: 50px;
+  margin: auto;
+  padding: 0.375rem 0.75rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 150px;
+}
+
+.fashion button:hover{
+  color: #fff;
+  background-color: #6E00B8;
+  text-decoration: none;
+}
+
+.fashion button:focus, .fashion button.focus{
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(147, 0, 255, 0.25);
+}
+
+
+.btafonesection {
+  padding-left: 450px;
+  padding-top: 285px;
+  min-width: 1280px;
+  max-width: 1280px;
+}
+
+.btafone, .btaftwo, .btafthree, .btaffour, .btaffive, .btafsix {
+  height: 150px;
+  width: auto;
+}
+
+
+
+.infoGraph, .infoGraphbtaf, .infoGraphAfro{
+  margin-top: 13.5em;
+  margin-left: -8em;
+  width: 560px;
+  height: 185px;
+  background-color: white;
+  border-radius: 1px;
+}
+
+
+.infoGraph, .infoGraphAfro{
+  color: #000;
+}
+
+.infoGraph h2{
+  margin: 0;
+  color: #FFAB40;
+  font-size: 1.1em;
+  text-align: center
+}
+
+.infoGraph h4{
+  margin: 0 0 5px 0;
+  color: #FFAB40;
+  font-size: .9em;
+  text-align: center;
+}
+
+.infoGraph p{
+  margin: 0 0 5px 0;
+  padding: 0 5px 0 5px;
+  font-size: .74em;
+}
+
+.infoGraphbtaf{
+  margin-left: 7.5em;
+}
+
+.infoGraphbtaf a{
+  color: #000;
+}
+
+.infoGraphbtaf h2{
+  margin: 0;
+  color: #bf9000;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.infoGraphbtaf h4{
+  margin: 0 0 5px 0;
+  color: #bf9000;
+  font-size: .9em;
+  text-align: center;
+}
+
+.infoGraphbtaf p{
+  margin: 0 0 5px 0;
+  padding: 0 5px 0 5px;
+  font-size: .74em;
+}
+
+
+.infoGraphAfro h2{
+ margin: 0;
+ color: #3C78D8;
+ font-size: 1.1em;
+ text-align: center
+}
+
+.infoGraphAfro h4{
+  margin: 0 0 5px 0;
+  color: #3C78D8;
+  font-size: .9em;
+  text-align: center;
+}
+
+.infoGraphAfro p{
+  line-height: 1.5em;
+  margin: 0 0 5px 0;
+  padding: 0 5px 0 5px;
+  font-size: .74em;
+  text-align: center;
+}
+
+
+
+
+.singles {
+  height: 100%;
+  width: 100vw;
+  position: relative;
+}
+
+.singlesRbh{
+  display: block;
+  height: auto;
+  margin: auto;
+  width: 50%;
+  position: relative;
+  top: 15px;
+}
+
+.singlesButton{
+  background: none;
+  border: none;
+  font-size: 1.25em;
+  z-index: 10;
+  position: absolute;
+  bottom: 8px;
+  right: 5%;
+}
+
+.singlesButtonHistory{
+  color: white;
+  bottom: 50px;
+  right: 50px;
+  padding: 10px;
+}
+
+.singlesButton:hover{
+  cursor: pointer;
+  color: #8859A9;
+}
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+
+.bottom-left:hover{
+  color: #8859A9;
+}
+
+.bottom-right:hover{
+  color: #8859A9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+/*Desktop & Laptop*/
+
+@media  (min-width: 1281px) {
+  .images, .imagesFirstGallery{
+    top: 18em;
+    left: 20em;
+  }
+
+  .imagesFirstGallery{
+    top: 17.5em;
+  }
+
+  .imagesSecondGallery, .imagesThirdGallery, .imagesFourthGallery, .imagesFifthGallery, .imagesSixthGallery{
+    top:17.5em;
+    left: 27em;
+  }
+
+.imagesThirdGallery{
+  top: 18.5em;
+}
+
+  .imagesFifthGallery{
+    top: 17em;
+  }
+
+
+.exhibitionsLeftGallery{
+  display: none;
+}
+
+.exhibitionsRightGallery{
+  display: none;
+}
+
+.camcapImagesRoom4, .camcapImagesRoom6, .camcapImagesRoom7{
+  left: 26.2em;
+  top: 17.5em;
+}
+
+.camcapImagesRoom7{
+  left: 40em;
+}
+
+
+.fashion h4{
+  padding-top: 4.5em;
+}
+
+.imagesSpecialEx{
+  top: 18em;
+  left: 31em;
+}
+
+.rbhImagesRoom2{
+
+top: 18em;
+left: 30em;
+
+}
+
+
+.infoGraph{
+  margin-top: 17.5em;
+  margin-left: 0em;
+}
+
+.infoGraphAfro{
+  margin-top: 18em;
+  margin-left: -3em;
+}
+
+.infoGraphbtaf{
+  margin-top: 16.5em;
+  margin-left: 14em;
+}
+
+
+.imagesLearnHistory{
+  top: 18em;
+  left: 29.5em;
+}
+
+
+.learnhistoryInfoPage h4{
+  padding-top: 4.5em;
+}
+
+
+.aboutimage h2{
+  padding-top: 4.5em;
+}
+}
+
+ @media (min-width: 1025px) and (max-width: 1250px) {
+  
+  .images, .imagesFirstGallery{
+    top: 14em;
+    left: 14em;
+  }
+
+  .imagesFirstGallery{
+    top: 14em;
+  }
+
+  .imagesSecondGallery, .imagesThirdGallery, .imagesFourthGallery, .imagesFifthGallery, .imagesSixthGallery{
+    top:14em;
+    left: 14em;
+  }
+
+.imagesThirdGallery{
+  top: 18.5em;
+}
+
+  .imagesFifthGallery{
+    top: 17em;
+  }
+
+
+.exhibitionsLeftGallery{
+  display: none;
+}
+
+.exhibitionsRightGallery{
+  display: none;
+}
+
+.camcapImagesRoom4, .camcapImagesRoom6, .camcapImagesRoom7{
+  left: 26.2em;
+  top: 17.5em;
+}
+
+.camcapImagesRoom7{
+  left: 40em;
+}
+
+
+.fashion h4{
+  padding-top: 4.5em;
+}
+
+.imagesSpecialEx{
+  top: 14em;
+  left: 25em;
+}
+
+.rbhImagesRoom2{
+
+top: 18em;
+left: 30em;
+
+}
+
+
+.infoGraph{
+  margin-top: 17.5em;
+  margin-left: 0em;
+}
+
+.infoGraphAfro{
+  margin-top: 18em;
+  margin-left: -3em;
+}
+
+.infoGraphbtaf{
+  margin-top: 16.5em;
+  margin-left: 14em;
+}
+
+
+.imagesLearnHistory{
+  top: 14em;
+  left: 22em;
+}
+
+
+.learnhistoryInfoPage h4{
+  padding-top: 4.5em;
+}
+
+
+.aboutimage h2{
+  padding-top: 4.5em;
+}
+  
+} 
+
+
+
+
+/*mobile*/
+
+
+#warning-message { display: none; }
+ @media only screen and (orientation:portrait){
+     #wrapper { display:none; }
+     #warning-message { display:block; }
+ }
+ @media only screen and (orientation:landscape){
+     #warning-message { display:none; }
+ }
+
+#warning-message{
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(149,149,149,1) 0%, rgba(209,209,209,1) 50%);
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.warningLogo{
+  height: auto;
+  width: 50%;
+  margin-top: 2em;
+}
+
+#warning-message h2{
+    color: #000;
+}
+
+
+@media only screen
+  and (min-device-width: 847px)
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+    .nav{
+      overflow-y: auto;
+  }
+
+  .logo{
+    width: 8%;
+  }
+
+  .overlay{
+    opacity: 1;
+  }
+
+  .overlay > * {
+    transform: none;
+    transition: none;
+  }
+
+  .overlayText{
+    font-size: 0.7rem;
+  }
+
+  .overlay:hover{
+    opacity: none;
+  }
+
+  .overlay:hover > * {
+    transform: none;
+  }
+
+
+  .images, .imagesSpecialEx, .imagesLearnHistory, .imagesFirstGallery,
+  .imagesSecondGallery, .imagesThirdGallery, .imagesFourthGallery,
+  .imagesFifthGallery, .imagesSixthGallery, .camcapImagesRoom4, .camcapImagesRoom6, .camcapImagesRoom7, .rbhImagesRoom2{
+    height: 90px;
+    top: 9em ;
+    left: 9em ;
+  }
+
+  .imagesSpecialEx{
+    left: 16em;
+  }
+
+  .imagesLearnHistory{
+      left: 14.4em;
+  }
+
+
+  .imagesFirstGallery{
+    left: 10em;
+  }
+
+  .imagesSecondGallery, .imagesThirdGallery, .imagesFourthGallery{
+    left: 13.5em;
+  }
+
+  .imagesThirdGallery{
+    left: 14em;
+  }
+
+  .imagesSixthGallery{
+    left: 15em;
+  }
+
+  .imagesSecondGallery h2{
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+
+
+  .exhibitionsRightGallery {
+      width: auto;
+      height: 110px;
+  }
+
+  .rightGalleryPreview, .rightGalleryPreviewTwo {
+      margin-top: 3.5em;
+  }
+
+  .rightGalleryCard{
+    margin-top: -6em;
+  }
+
+  .rightGalleryContainer{
+    width: 50px;
+  }
+
+  .exhibitionsLeftGallery{
+    width: auto;
+    height: 110px;
+  }
+
+  .leftGalleryPreview, .leftGalleryPreviewTwo {
+    margin-top: 3.5em;
+  }
+
+  .leftGalleryContainer{
+    width: 50px;
+  }
+
+
+  .learnhistoryInfoPage h4 {
+      font-size: 1em;
+      padding-top: 1em;
+      margin-bottom: 0;
+  }
+
+  .learnhistoryInfoPage h1{
+    font-size: 1.2em;
+  }
+
+  .learnhistoryInfoPage p{
+    font-size: 0.9em;
+  }
+
+  .learnhistoryInfoPage button{
+    height: 40px;
+    width: 125px;
+    font-size: 0.8em;
+  }
+
+  .fashion h4{
+    font-size: 1em;
+  }
+
+  .fashion h1{
+    font-size: 1.2em;
+    padding-top: 1em;
+  }
+
+  .fashion p{
+    font-size: 0.9em;
+  }
+
+  .fashion button{
+    height: 40px;
+    width: 125px;
+    font-size: 0.8em;
+  }
+
+  .cardPageTwo{
+      width: 150px;
+      height: 60px;
+      margin-top: 1em;
+  }
+
+  .cardPageTwo p{
+    font-size: 0.4em;
+  }
+
+  .imagesFifthGallery{
+    left: 13.5em;
+  }
+
+
+
+  .imagesFifthGallery h2{
+    font-size: .7em;
+  }
+
+  .cardPageThree{
+    width: 140px;
+    margin-left: 0.5em;
+  }
+
+  .cardPageThree p{
+    font-size: 0.4em;
+  }
+
+  .camcapImagesRoom4{
+    left: 13em;
+  }
+
+  .camcapImagesRoom6{
+    left: 12.5em;
+  }
+
+  .camcapImagesRoom7{
+    left: 21em;
+  }
+
+  .hamburger{
+    width: 30%;
+  }
+
+  .card{
+    display: none;
+  }
+
+  .infoGraph, .infoGraphbtaf, .infoGraphAfro{
+    margin-top: 8em;
+    margin-left: -6em;
+  }
+
+  .infoGraphbtaf{
+    margin-left: 4em;
+    overflow: hidden;
+  }
+
+  .infoGraph, .infoGraphbtaf, .infoGraphAfro{
+    width: 350px;
+    height: 130px;
+  }
+
+  .infoGraph p, .infoGraphAfro p{
+    font-size: .5em;
+  }
+
+  .infoGraphbtaf p{
+    font-size: .5em
+  }
+
+  .rbhImagesRoom2{
+    height: 105px;
+    left: 15em;
+  }
+
+  .cardRbh{
+    height: 100px;
+    margin: 0;
+    width: 200px;
+  }
+
+  .cardRbh h2{
+    font-size: .7em;
+  }
+
+  .cardRbh h4{
+    font-size: .6em;
+  }
+
+  .cardRbh p{
+    font-size: .55em;
+  }
+
+  .cardRbhAncestors{
+    margin-top: 1em;
+  }
+
+  .northAmericanMuseums{
+    min-height: 100vh;
+    height: 100%;
+  }
+
+  .northAmericanMuseums ul{
+    font-size: 0.8em;
+  }
+
+  .aboutimage h2, .museumImage h2{
+    padding-top: 30px;
+  }
+
+  .aboutimage button, {
+    font-size: 1em;
+    width: 150px;
+  }
+
+  .museumImage button{
+    margin-top: 5em;
+  }
+
+  .aboutBorder p{
+    font-size: .8em;
+  }
+
+}
+
+
+@media only screen
+  and (min-device-width: 812px)
+  and (max-device-width: 846px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+    .nav{
+        overflow-y: auto;
+    }
+
+    .logo{
+      width: 8%;
+    }
+
+    .overlay{
+      opacity: 1;
+    }
+
+    .overlay > * {
+      transform: none;
+      transition: none;
+    }
+
+    .overlayText{
+      font-size: 0.7rem;
+    }
+
+    .overlay:hover{
+      opacity: none;
+    }
+
+    .overlay:hover > * {
+      transform: none;
+    }
+
+
+    .images, .imagesSpecialEx, .imagesLearnHistory, .imagesFirstGallery,
+    .imagesSecondGallery, .imagesThirdGallery, .imagesFourthGallery,
+    .imagesFifthGallery, .imagesSixthGallery, .camcapImagesRoom4, .camcapImagesRoom6, .camcapImagesRoom7, .rbhImagesRoom2{
+      height: 90px;
+      top: 9em ;
+      left: 9em ;
+    }
+
+    .imagesSpecialEx{
+      left: 16em;
+    }
+
+    .imagesLearnHistory{
+        left: 14.4em;
+    }
+
+
+    .imagesFirstGallery{
+      left: 10em;
+    }
+
+    .imagesSecondGallery, .imagesThirdGallery, .imagesFourthGallery{
+      left: 13.5em;
+    }
+
+    .imagesThirdGallery{
+      left: 14em;
+    }
+
+    .imagesSixthGallery{
+      left: 15em;
+    }
+
+    .imagesSecondGallery h2{
+      font-size: 1.5em;
+      margin-top: 1em;
+    }
+
+
+    .exhibitionsRightGallery {
+        width: auto;
+        height: 110px;
+    }
+
+    .rightGalleryPreview, .rightGalleryPreviewTwo {
+        margin-top: 3.5em;
+    }
+
+    .rightGalleryCard{
+      margin-top: -6em;
+    }
+
+    .rightGalleryContainer{
+      width: 50px;
+    }
+
+    .exhibitionsLeftGallery{
+      width: auto;
+      height: 110px;
+    }
+
+    .leftGalleryPreview, .leftGalleryPreviewTwo {
+      margin-top: 3.5em;
+    }
+
+    .leftGalleryContainer{
+      width: 50px;
+    }
+
+
+    .learnhistoryInfoPage h4 {
+        font-size: 1em;
+        padding-top: 1em;
+        margin-bottom: 0;
+    }
+
+    .learnhistoryInfoPage h1{
+      font-size: 1.2em;
+    }
+
+    .learnhistoryInfoPage p{
+      font-size: 0.9em;
+    }
+
+    .learnhistoryInfoPage button{
+      height: 40px;
+      width: 125px;
+      font-size: 0.8em;
+    }
+
+    .fashion h4{
+      font-size: 1em;
+    }
+
+    .fashion h1{
+      font-size: 1.2em;
+      padding-top: 1em;
+    }
+
+    .fashion p{
+      font-size: 0.9em;
+    }
+
+    .fashion button{
+      height: 40px;
+      width: 125px;
+      font-size: 0.8em;
+    }
+
+    .cardPageTwo{
+        width: 150px;
+        height: 60px;
+        margin-top: 1em;
+    }
+
+    .cardPageTwo p{
+      font-size: 0.4em;
+    }
+
+    .imagesFifthGallery{
+      left: 13.5em;
+    }
+
+
+
+    .imagesFifthGallery h2{
+      font-size: .7em;
+    }
+
+    .cardPageThree{
+      width: 140px;
+      margin-left: 0.5em;
+    }
+
+    .cardPageThree p{
+      font-size: 0.4em;
+    }
+
+    .camcapImagesRoom4{
+      left: 13em;
+    }
+
+    .camcapImagesRoom6{
+      left: 12.5em;
+    }
+
+    .camcapImagesRoom7{
+      left: 21em;
+    }
+
+    .hamburger{
+      width: 30%;
+    }
+
+    .card{
+      display: none;
+    }
+
+    .infoGraph, .infoGraphbtaf, .infoGraphAfro{
+      margin-top: 8em;
+      margin-left: -6em;
+    }
+
+    .infoGraphbtaf{
+      margin-left: 4em;
+      overflow: hidden;
+    }
+
+    .infoGraph, .infoGraphbtaf, .infoGraphAfro{
+      width: 350px;
+      height: 130px;
+    }
+
+    .infoGraph p, .infoGraphAfro p{
+      font-size: .5em;
+    }
+
+    .infoGraphbtaf p{
+      font-size: .5em
+    }
+
+    .rbhImagesRoom2{
+      height: 105px;
+      left: 15em;
+    }
+
+    .cardRbh{
+      height: 100px;
+      margin: 0;
+      width: 200px;
+    }
+
+    .cardRbh h2{
+      font-size: .7em;
+    }
+
+    .cardRbh h4{
+      font-size: .6em;
+    }
+
+    .cardRbh p{
+      font-size: .55em;
+    }
+
+    .cardRbhAncestors{
+      margin-top: 1em;
+    }
+
+    .northAmericanMuseums{
+      min-height: 100vh;
+      height: 100%;
+    }
+
+    .northAmericanMuseums ul{
+      font-size: 0.8em;
+    }
+
+    .aboutimage h2, .museumImage h2{
+      padding-top: 30px;
+    }
+
+    .aboutimage button, {
+      font-size: 1em;
+      width: 150px;
+    }
+
+    .museumImage button{
+      margin-top: 5em;
+    }
+
+    .aboutBorder p{
+      font-size: .8em;
+    }
+
+  }
+
+
+  @media only screen
+  and (min-device-width: 730px)
+  and (max-device-width: 775px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+      .nav{
+          overflow-y: auto;
+      }
+
+      .logo{
+        width: 8%;
+      }
+
+      .overlay{
+        opacity: 1;
+        font-size: 0.9rem;
+      }
+
+      .overlay > * {
+        transform: none;
+        transition: none;
+      }
+
+      .overlay:hover{
+        opacity: none;
+      }
+
+      .overlay:hover > * {
+        transform: none;
+      }
+
+      .rightGalleryPreview{
+        height: 5em;
+        margin-top: 3.5em;
+      }
+
+      .rightGalleryPreviewTwo{
+        margin-top: 3.5em;
+      }
+
+      .rightGalleryContainer{
+        width: 50px;
+      }
+
+      .leftGalleryContainer{
+        width: 55px;
+      }
+
+      .leftGalleryPreview{
+        margin-top: 3.5em;
+      }
+
+      .leftGalleryPreviewTwo{
+        margin-top: 3.5em;
+      }
+
+      .images, .imagesSpecialEx, .imagesLearnHistory, .imagesFirstGallery,
+      .imagesSecondGallery, .imagesThirdGallery, .imagesFourthGallery,
+      .imagesFifthGallery, .imagesSixthGallery, .camcapImagesRoom4, .camcapImagesRoom6, .camcapImagesRoom7, .rbhImagesRoom2{
+        height: 90px;
+        top: 8.25em ;
+        left: 8em ;
+      }
+
+      .imagesSpecialEx{
+        left: 15em;
+      }
+
+      .imagesLearnHistory{
+          left: 13em;
+      }
+
+      .imagesFifthGallery{
+        left: 12em;
+      }
+
+      .imagesFifthGallery h2{
+        font-size: .7em;
+      }
+
+      .imagesFirstGallery{
+        left: 10em;
+      }
+
+      .imagesSecondGallery, .imagesThirdGallery, .imagesFourthGallery{
+        left: 12em;
+      }
+
+      .imagesSixthGallery{
+        left: 15em;
+      }
+
+      .imagesSecondGallery h2{
+        font-size: 1.5em;
+        margin-top: 1em;
+      }
+
+      .secondGalleryRoom{
+        width: 42%;
+      }
+
+      .imagesSixthGallery{
+        left: 13em;
+      }
+
+      .sixthGalleryRoom{
+        justify-content: space-evenly;
+
+      }
+
+      .exhibitionssection{
+        width: 46%;
+      }
+
+      .exhibitionsRightGallery{
+        height: 95px;
+      }
+
+      .exhibitionsLeftGallery{
+        height: 95px;
+      }
+
+
+      .cardPageTwo{
+          width: 150px;
+          height: 60px;
+          margin-top: 1em;
+      }
+
+      .cardPageTwo p{
+        font-size: 0.4em;
+      }
+
+      .cardPageThree{
+        width: 140px;
+        margin-left: 0.5em;
+      }
+
+      .cardPageThree p{
+        font-size: 0.4em;
+      }
+
+      .camcapImagesRoom4{
+        left: 13em;
+      }
+
+      .camcapImagesRoom6{
+        left: 12.5em;
+      }
+
+      .camcapImagesRoom7{
+        left: 21em;
+      }
+
+      .hamburger{
+        width: 30%;
+      }
+
+      .card{
+        display: none;
+      }
+
+      .infoGraph, .infoGraphbtaf{
+        margin-top: 8em;
+        margin-left: -6em;
+      }
+
+      .infoGraph, .infoGraphbtaf{
+        width: 400px;
+        height: 130px;
+      }
+
+      .infoGraph p{
+        font-size: .5em;
+      }
+
+      .infoGraphbtaf p{
+        font-size: .5em
+      }
+
+      .rbhImagesRoom2{
+        height: 105px;
+        left: 13em;
+      }
+
+      .cardRbh{
+        height: 100px;
+        margin: 0;
+        width: 200px;
+      }
+
+      .cardRbh h2{
+        font-size: .7em;
+      }
+
+      .cardRbh h4{
+        font-size: .6em;
+      }
+
+      .cardRbh p{
+        font-size: .55em;
+      }
+
+  }
